@@ -1,20 +1,13 @@
 {
-  "name": "CV-lucas-barretto-e-silva",
+  "name": "cv-lucas-barretto-e-silva",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "dist/index.html",
   "scripts": {
-    "start": "parcel -p 5505 src/index.html --open",
-    "build": "parcel build src/index.html --no-cache --public-url ./dist/",
-    "deploy": "rm -rf dist/* && rm index.html && npm run build && cd dist && cp index.html ../index.html"
+    "start": "parcel serve ./src/index.html --open",
+    "build": "parcel build ./src/index.html"
   },
-  "keywords": [],
-  "author": "Lucas Barretto e Silva",
-  "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
-  },
-  "dependencies": {
-    "parcel": "^1.12.4"
+    "parcel": "^2.0.0-beta.2"
   }
 }

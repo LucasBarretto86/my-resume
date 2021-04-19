@@ -1,20 +1,38 @@
 {
     "personal": {
-        "avatar": "",
+        "avatar": "https://mohamed28.github.io/src/assets/images/icons/head/home-tab.png",
         "name": "Lucas",
         "surname": "Barretto e Silva",
-        "full_name": "Lucas Barretto e Silva",
-        "birthday": "05/08/1986",
+        "birthday": {
+            "day": "05",
+            "month": "08",
+            "year": "1986"
+        },
         "email": "lucas.barretto86@gmail.com",
-        "phone": "11-985979534",
-        "address": "Av. Alda, 1175, Diadema - SP, 09910-170",
-        "hobbies": "Guitarra, desenho, pintura, videogame"
+        "nationality": "brasileiro",
+        "civil": "divorciado",
+        "phone": {
+            "international": "55",
+            "code": "11",
+            "number": "985979534"
+        },
+        "address": {
+            "street": "Av. Alda",
+            "number": "1175",
+            "neighborhood": "Centro",
+            "city": "Diadema",
+            "state": "SP",
+            "country": "Brasil",
+            "zipcode": "09910-170"
+        },
+        "hobbies": "Guitarra, desenho, pintura, videogame",
+        "position": "Desenvolvedor Fullstack Junior"
     },
     "graduation": {
         "institution": "FMU - Centro Universitário das Faculdades Metropolitanas Unidas",
         "degree": "Análise e desenvolvimento de Sistemas",
-        "start_at": "Jan 2018",
-        "conclused_at": "Jun 2020"
+        "started_at": "Jan 2018",
+        "concluded_at": "Jun 2020"
     },
     "letter": "Desenvolvedor de sistemas, formado desde Julho de 2020, com experiência de 2 anos na área, entre estágio e contrato, atualmente trabalhando em aplicação Ruby on Rails, sendo, responsável pelo desenvolvimento e manutenção, tanto frontend, quando no backend, com mais 300 commits e 300mil linhas de código adicionadas ao repositório do projeto, sou familiarizado com o dia a dia e rotina ágil. Agnóstico a linguagens, tenho interesse por oportunidades que me permitam trabalhar para adiquirir e aprimorar conhecimentos.",
     "jobs": [
