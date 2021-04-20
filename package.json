@@ -2,7 +2,7 @@
   "name": "cv-lucas-barretto-e-silva",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.html",
+  "main": "src/index.html",
   "scripts": {
     "start": "parcel serve ./src/index.html --open",
     "build": "parcel build ./src/index.html"

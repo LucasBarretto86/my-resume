@@ -496,7 +496,7 @@ exports.export = function (dest, destName, get) {
   });
 };
 },{}],"25Uuk":[function(require,module,exports) {
-module.exports = JSON.parse("{\"personal\":{\"avatar\":\"https://mohamed28.github.io/src/assets/images/icons/head/home-tab.png\",\"name\":\"Lucas\",\"surname\":\"Barretto e Silva\",\"birthday\":{\"day\":\"05\",\"month\":\"08\",\"year\":\"1986\"},\"email\":\"lucas.barretto86@gmail.com\",\"nationality\":\"brasileiro\",\"civil\":\"divorciado\",\"phone\":{\"international\":\"55\",\"code\":\"11\",\"number\":\"985979534\"},\"address\":{\"street\":\"Av. Alda\",\"number\":\"1175\",\"neighborhood\":\"Centro\",\"city\":\"Diadema\",\"state\":\"SP\",\"country\":\"Brasil\",\"zipcode\":\"09910-170\"},\"hobbies\":\"Guitarra, desenho, pintura, videogame\",\"position\":\"Desenvolvedor Fullstack Junior\"},\"graduation\":{\"institution\":\"FMU - Centro Universitário das Faculdades Metropolitanas Unidas\",\"degree\":\"Análise e desenvolvimento de Sistemas\",\"started_at\":\"Jan 2018\",\"concluded_at\":\"Jun 2020\"},\"letter\":\"Desenvolvedor de sistemas, formado desde Julho de 2020, com experiência de 2 anos na área, entre estágio e contrato, atualmente trabalhando em aplicação Ruby on Rails, sendo, responsável pelo desenvolvimento e manutenção, tanto frontend, quando no backend, com mais 300 commits e 300mil linhas de código adicionadas ao repositório do projeto, sou familiarizado com o dia a dia e rotina ágil. Agnóstico a linguagens, tenho interesse por oportunidades que me permitam trabalhar para adiquirir e aprimorar conhecimentos.\",\"jobs\":[{\"company\":\"Festalab Festas e Eventos\",\"postion\":\"Desenvolvedor Fullstack Junior\",\"start_at\":\"Feb 2019\",\"until\":\"present\",\"details\":\"\"}],\"socials\":[{\"name\":\"linkedIn\",\"link\":\"www.linkedin.com/in/lucasbarretto\"},{\"name\":\"Respositório - Pessoal\",\"link\":\"https://github.com/Mohamed28\"},{\"name\":\"Repositório - Festalab\",\"link\":\"https://github.com/lucas-festalab\"}],\"courses\":[{\"institution\":\"Caelum\",\"course\":\"Formação Java\",\"conclused_at\":\"August 2017\"},{\"institution\":\"Caelum\",\"course\":\"Desenvolvimento na prática com Spring, Testes, Git e Maven\",\"conclused_at\":\"Sep 2017\"}],\"skills\":[{\"name\":\"Inglês\",\"level\":\"Avançado\"}],\"references\":[{\"name\":\"Guilherme Yamakawa de Oliveira\",\"phone\":\"44 99801281\",\"email\":\"\",\"company\":\"Festalab\",\"position\":\"Desenvolvedor Sênior\"}]}");
+module.exports = JSON.parse("{\"personal\":{\"header\":\"Informações\",\"avatar\":\"https://mohamed28.github.io/src/assets/images/icons/head/home-tab.png\",\"name\":\"Lucas\",\"surname\":\"Barretto e Silva\",\"birthday\":{\"day\":\"05\",\"month\":\"08\",\"year\":\"1986\"},\"email\":\"lucas.barretto86@gmail.com\",\"nationality\":\"brasileiro\",\"civil\":\"divorciado\",\"phone\":{\"international\":\"55\",\"code\":\"11\",\"number\":\"985979534\"},\"address\":{\"street\":\"Av. Alda\",\"number\":\"1175\",\"neighborhood\":\"Centro\",\"city\":\"Diadema\",\"state\":\"SP\",\"country\":\"Brasil\",\"zipcode\":\"09910-170\"},\"hobbies\":\"Guitarra, desenho, pintura, videogame\",\"position\":\"Desenvolvedor Fullstack Junior\"},\"paragraphs\":{\"header\":\"Carta\",\"contents\":[\"Desenvolvedor de sistemas, formado desde Julho de 2020, com experiência de 2 anos na área, entre estágio e contrato, atualmente trabalhando em aplicação Ruby on Rails, sendo, responsável pelo desenvolvimento e manutenção, tanto frontend, quando no backend, com mais 300 commits e 300mil linhas de código adicionadas ao repositório do projeto, sou familiarizado com o dia a dia e rotina ágil. Agnóstico a linguagens, tenho interesse por oportunidades que me permitam trabalhar para adiquirir e aprimorar conhecimentos.\"]},\"infos\":[{\"header\":\"Formação\",\"items\":[{\"name\":\"FMU - Centro Universitário das Faculdades Metropolitanas Unidas\",\"description\":\"Análise e desenvolvimento de Sistemas\",\"from\":\"Jan 2018\",\"to\":\"Jun 2020\",\"details\":\"\"}]},{\"header\":\"Experiência\",\"items\":[{\"name\":\"Festalab Festas e Eventos\",\"description\":\"Desenvolvedor Fullstack Junior\",\"from\":\"Feb 2019\",\"to\":\"present\",\"details\":\"\"}]},{\"header\":\"Cursos\",\"items\":[{\"name\":\"Caelum\",\"description\":\"Formação Java\",\"from\":\"\",\"to\":\"Ago 2017\",\"details\":\"\"},{\"name\":\"Caelum\",\"description\":\"Desenvolvimento na prática com Spring, Testes, Git e Maven\",\"from\":\"\",\"to\":\"Set 2017\",\"details\":\"\"}]},{\"header\":\"Referências\",\"items\":[{\"name\":\"Guilherme Yamakawa de Oliveira\",\"description\":\"Festalab - Desenvolvedor Fullstack Sênior\",\"from\":\"\",\"to\":\"\",\"details\":\"44 99801281 - guilherme44@hey.com\"}]}],\"links\":{\"header\":\"Site, Redes e Repos\",\"items\":[{\"name\":\"LinkedIn\",\"link\":\"https://www.linkedin.com/in/lucasbarretto\"},{\"name\":\"Respositório - Pessoal\",\"link\":\"https://github.com/Mohamed28\"},{\"name\":\"Repositório - Festalab\",\"link\":\"https://github.com/lucas-festalab\"},{\"name\":\"Mohamed28's Dome\",\"link\":\"https://mohamed28.github.io/\"}]},\"skills\":[{\"header\":\"Idiomas\",\"items\":[{\"name\":\"Inglês\",\"level\":\"4\"}]}]}");
 },{}],"7aRXx":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
@@ -566,10 +566,16 @@ var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _libsComponent = require("../../libs/component");
 var _libsComponentDefault = _parcelHelpers.interopDefault(_libsComponent);
-var _section_graduationSectionGraduation = require("../section_graduation/SectionGraduation");
-var _section_graduationSectionGraduationDefault = _parcelHelpers.interopDefault(_section_graduationSectionGraduation);
 var _section_personalSectionPersonal = require("../section_personal/SectionPersonal");
 var _section_personalSectionPersonalDefault = _parcelHelpers.interopDefault(_section_personalSectionPersonal);
+var _section_linksSectionLinks = require("../section_links/SectionLinks");
+var _section_linksSectionLinksDefault = _parcelHelpers.interopDefault(_section_linksSectionLinks);
+var _section_skillsSectionSkills = require("../section_skills/SectionSkills");
+var _section_skillsSectionSkillsDefault = _parcelHelpers.interopDefault(_section_skillsSectionSkills);
+var _section_paragraphsSectionParagraphs = require("../section_paragraphs/SectionParagraphs");
+var _section_paragraphsSectionParagraphsDefault = _parcelHelpers.interopDefault(_section_paragraphsSectionParagraphs);
+var _section_infosSectionInfos = require("../section_infos/SectionInfos");
+var _section_infosSectionInfosDefault = _parcelHelpers.interopDefault(_section_infosSectionInfos);
 class Main {
   constructor(props) {
     this.props = props;
@@ -582,15 +588,15 @@ class Main {
     }, ["div", "", {
       id: "sidebar",
       class: "sidebar"
-    }, new _section_personalSectionPersonalDefault.default(this.props.personal)], ["div", "", {
+    }, new _section_personalSectionPersonalDefault.default(this.props.personal), new _section_linksSectionLinksDefault.default(this.props.links), ...this.props.skills.map(skill => new _section_skillsSectionSkillsDefault.default(skill))], ["div", "", {
       id: "content",
       class: "content"
-    }, new _section_graduationSectionGraduationDefault.default(this.props.graduation)]);
+    }, new _section_paragraphsSectionParagraphsDefault.default(this.props.paragraphs), ...this.props.infos.map(info => new _section_infosSectionInfosDefault.default(info))]);
   }
 }
 exports.default = Main;
 
-},{"../../libs/component":"7HUi1","../section_personal/SectionPersonal":"5l4hk","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../section_graduation/SectionGraduation":"7sejs"}],"5l4hk":[function(require,module,exports) {
+},{"../../libs/component":"7HUi1","../section_personal/SectionPersonal":"5l4hk","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../section_links/SectionLinks":"4P7zu","../section_paragraphs/SectionParagraphs":"5e35s","../section_infos/SectionInfos":"3QgRt","../section_skills/SectionSkills":"7GT2z"}],"5l4hk":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _libsComponent = require("../../libs/component");
@@ -603,7 +609,9 @@ class SectionPersonal {
   render() {
     return _libsComponentDefault.default.build("section", "", {
       id: "personal"
-    }, ["p", this.fullAddress(), {
+    }, ["h3", this.props.header, {
+      class: "personal__header"
+    }], ["p", this.fullAddress(), {
       class: "personal__address"
     }], ["p", this.phone(), {
       class: "personal__phone"
@@ -620,36 +628,132 @@ class SectionPersonal {
 }
 exports.default = SectionPersonal;
 
-},{"../../libs/component":"7HUi1","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"7sejs":[function(require,module,exports) {
+},{"../../libs/component":"7HUi1","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"4P7zu":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _libsComponent = require("../../libs/component");
 var _libsComponentDefault = _parcelHelpers.interopDefault(_libsComponent);
-class SectionGraduation {
+class LinksList {
   constructor(props) {
     this.props = props;
     return this.render();
   }
-  /*"institution": "FMU - Centro Universitário das Faculdades Metropolitanas Unidas",*/
-  /*"degree": "Análise e desenvolvimento de Sistemas",*/
-  /*"started_at": "Jan 2018",*/
-  /*"conclused_at": "Jun 2020"*/
   render() {
     return _libsComponentDefault.default.build("section", "", {
-      id: "graduation",
-      class: "graduation"
-    }, ["h2", this.props.institution, {
-      class: "graduation__institution"
-    }], ["p", this.props.degree, {
-      class: "graduation__degree"
-    }], ["p", "", {}, ["span", this.props.started_at, {
-      class: "graduation__started_at"
-    }], ["b", " - "], ["span", this.props.concluded_at, {
-      class: "graduation__concluded_at"
-    }]]);
+      id: this.props.header,
+      class: this.props.header
+    }, ["h3", this.props.header], ["ul", "", {}, ...this.items(this.props.items)]);
+  }
+  items(items) {
+    if (items.length < 1) return;
+    return items.map(item => this.item(item));
+  }
+  item(item) {
+    return _libsComponentDefault.default.build("li", "", {}, ["a", item.name, {
+      href: item.link,
+      target: "_blank"
+    }]);
   }
 }
-exports.default = SectionGraduation;
+exports.default = LinksList;
+
+},{"../../libs/component":"7HUi1","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"5e35s":[function(require,module,exports) {
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _libsComponent = require("../../libs/component");
+var _libsComponentDefault = _parcelHelpers.interopDefault(_libsComponent);
+class SimpleList {
+  constructor(props) {
+    this.props = props;
+    return this.render();
+  }
+  render() {
+    return _libsComponentDefault.default.build("section", "", {
+      id: "paragraphs",
+      class: "paragraphs"
+    }, ["h3", this.props.header], ["p", this.props.content]);
+  }
+}
+exports.default = SimpleList;
+
+},{"../../libs/component":"7HUi1","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"3QgRt":[function(require,module,exports) {
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _libsComponent = require("../../libs/component");
+var _libsComponentDefault = _parcelHelpers.interopDefault(_libsComponent);
+class SectionInfos {
+  constructor(props) {
+    this.props = props;
+    return this.render();
+  }
+  render() {
+    return _libsComponentDefault.default.build("section", "", {
+      id: "infos",
+      class: "infos"
+    }, ["h3", this.props.header, {
+      class: "header"
+    }], ["div", "", {
+      class: "items"
+    }, ...this.items(this.props.items)]);
+  }
+  items(items) {
+    if (items.length < 1) return;
+    return items.map(item => this.item(item));
+  }
+  item(item) {
+    return _libsComponentDefault.default.build("div", "", {
+      class: "items__item"
+    }, ["h4", item.name, {
+      class: "item__name"
+    }], ["p", item.description, {
+      class: "item__description"
+    }], ["p", [item.from, item.to].filter(i => i !== "").join(" - "), {
+      class: "item__from-to"
+    }], ["p", item.details, {
+      class: "item__details"
+    }]);
+  }
+}
+exports.default = SectionInfos;
+
+},{"../../libs/component":"7HUi1","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"7GT2z":[function(require,module,exports) {
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _libsComponent = require("../../libs/component");
+var _libsComponentDefault = _parcelHelpers.interopDefault(_libsComponent);
+class SectionSkills {
+  constructor(props) {
+    this.props = props;
+    return this.render();
+  }
+  render() {
+    return _libsComponentDefault.default.build("section", "", {
+      id: "skills",
+      class: "skills"
+    }, ["h3", this.props.header, {
+      class: "header"
+    }], ["div", "", {
+      class: "items"
+    }, ...this.items(this.props.items)]);
+  }
+  items(items) {
+    if (items.length < 1) return;
+    return items.map(item => this.item(item));
+  }
+  item(item) {
+    return _libsComponentDefault.default.build("div", "", {
+      class: "items__item"
+    }, ["h4", item.name, {
+      class: "items__name"
+    }], ["meter", "", {
+      class: "items__level",
+      value: item.level,
+      min: "0",
+      max: "5"
+    }]);
+  }
+}
+exports.default = SectionSkills;
 
 },{"../../libs/component":"7HUi1","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["3Imd1","5rkFb"], "5rkFb", "parcelRequire52bd")
 

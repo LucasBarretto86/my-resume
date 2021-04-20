@@ -1,5 +1,6 @@
 {
     "personal": {
+        "header": "Informações",
         "avatar": "https://mohamed28.github.io/src/assets/images/icons/head/home-tab.png",
         "name": "Lucas",
         "surname": "Barretto e Silva",
@@ -28,61 +29,99 @@
         "hobbies": "Guitarra, desenho, pintura, videogame",
         "position": "Desenvolvedor Fullstack Junior"
     },
-    "graduation": {
-        "institution": "FMU - Centro Universitário das Faculdades Metropolitanas Unidas",
-        "degree": "Análise e desenvolvimento de Sistemas",
-        "started_at": "Jan 2018",
-        "concluded_at": "Jun 2020"
+    "paragraphs": {
+        "header": "Carta",
+        "contents": [
+            "Desenvolvedor de sistemas, formado desde Julho de 2020, com experiência de 2 anos na área, entre estágio e contrato, atualmente trabalhando em aplicação Ruby on Rails, sendo, responsável pelo desenvolvimento e manutenção, tanto frontend, quando no backend, com mais 300 commits e 300mil linhas de código adicionadas ao repositório do projeto, sou familiarizado com o dia a dia e rotina ágil. Agnóstico a linguagens, tenho interesse por oportunidades que me permitam trabalhar para adiquirir e aprimorar conhecimentos."
+        ]
     },
-    "letter": "Desenvolvedor de sistemas, formado desde Julho de 2020, com experiência de 2 anos na área, entre estágio e contrato, atualmente trabalhando em aplicação Ruby on Rails, sendo, responsável pelo desenvolvimento e manutenção, tanto frontend, quando no backend, com mais 300 commits e 300mil linhas de código adicionadas ao repositório do projeto, sou familiarizado com o dia a dia e rotina ágil. Agnóstico a linguagens, tenho interesse por oportunidades que me permitam trabalhar para adiquirir e aprimorar conhecimentos.",
-    "jobs": [
+    "infos": [
         {
-            "company": "Festalab Festas e Eventos",
-            "postion": "Desenvolvedor Fullstack Junior",
-            "start_at": "Feb 2019",
-            "until": "present",
-            "details": ""
-        }
-    ],
-    "socials": [
-        {
-            "name": "linkedIn",
-            "link": "www.linkedin.com/in/lucasbarretto"
+            "header": "Formação",
+            "items": [
+                {
+                    "name": "FMU - Centro Universitário das Faculdades Metropolitanas Unidas",
+                    "description": "Análise e desenvolvimento de Sistemas",
+                    "from": "Jan 2018",
+                    "to": "Jun 2020",
+                    "details": ""
+                }
+            ]
         },
         {
-            "name": "Respositório - Pessoal",
-            "link": "https://github.com/Mohamed28"
+            "header": "Experiência",
+            "items": [
+                {
+                    "name": "Festalab Festas e Eventos",
+                    "description": "Desenvolvedor Fullstack Junior",
+                    "from": "Feb 2019",
+                    "to": "present",
+                    "details": ""
+                }
+            ]
         },
         {
-            "name": "Repositório - Festalab",
-            "link": "https://github.com/lucas-festalab"
-        }
-    ],
-    "courses": [
-        {
-            "institution": "Caelum",
-            "course": "Formação Java",
-            "conclused_at": "August 2017"
+            "header": "Cursos",
+            "items": [
+                {
+                    "name": "Caelum",
+                    "description": "Formação Java",
+                    "from": "",
+                    "to": "Ago 2017",
+                    "details": ""
+                },
+                {
+                    "name": "Caelum",
+                    "description": "Desenvolvimento na prática com Spring, Testes, Git e Maven",
+                    "from": "",
+                    "to": "Set 2017",
+                    "details": ""
+                }
+            ]
         },
         {
-            "institution": "Caelum",
-            "course": "Desenvolvimento na prática com Spring, Testes, Git e Maven",
-            "conclused_at": "Sep 2017"
+            "header": "Referências",
+            "items": [
+                {
+                    "name": "Guilherme Yamakawa de Oliveira",
+                    "description": "Festalab - Desenvolvedor Fullstack Sênior",
+                    "from": "",
+                    "to": "",
+                    "details": "44 99801281 - guilherme44@hey.com"
+                }
+            ]
         }
     ],
+    "links": {
+        "header": "Site, Redes e Repos",
+        "items": [
+            {
+                "name": "LinkedIn",
+                "link": "https://www.linkedin.com/in/lucasbarretto"
+            },
+            {
+                "name": "Respositório - Pessoal",
+                "link": "https://github.com/Mohamed28"
+            },
+            {
+                "name": "Repositório - Festalab",
+                "link": "https://github.com/lucas-festalab"
+            },
+            {
+                "name": "Mohamed28's Dome",
+                "link": "https://mohamed28.github.io/"
+            }
+        ]
+    },
     "skills": [
         {
-            "name": "Inglês",
-            "level": "Avançado"
-        }
-    ],
-    "references": [
-        {
-            "name": "Guilherme Yamakawa de Oliveira",
-            "phone": "44 99801281",
-            "email": "",
-            "company": "Festalab",
-            "position": "Desenvolvedor Sênior"
+            "header": "Idiomas",
+            "items": [
+                {
+                    "name": "Inglês",
+                    "level": "4"
+                }
+            ]
         }
     ]
 }

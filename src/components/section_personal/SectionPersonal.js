@@ -10,6 +10,7 @@ export default class SectionPersonal {
 
     render() {
         return Component.build("section", "", { id: "personal" },
+            ["h3", this.props.header, { class: "personal__header" }],
             ["p", this.fullAddress(), { class: "personal__address" }],
             ["p", this.phone(), { class: "personal__phone" }],
             ["p", this.props.email, { class: "personal__email" }]
