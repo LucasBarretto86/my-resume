@@ -10,7 +10,7 @@ export default class SimpleList {
     render() {
         return Component.build("section", "", { id: "paragraphs", class: "paragraphs" },
             ["h3", this.props.header],
-            ["p", this.props.content],
+            ...this.props.contents.map(content => ["p", content]),
         )
     }
 }
