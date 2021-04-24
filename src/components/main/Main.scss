@@ -1,0 +1,35 @@
+.main {
+    display: grid;
+    grid-template-columns: 264px auto;
+    grid-column-gap: 32px;
+    width: 100%;
+
+    .sidebar {
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 8px;
+
+        :is(h3, h4) {
+            text-align: center;
+        }
+
+        .items__item {
+            width: 100%;
+        }
+    }
+
+    .content {
+        position: relative;
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 16px;
+        padding-left: 32px;
+        border-left: 1px solid var(--primary-color);
+
+        :is(h3, h4) {
+            text-align: left;
+        }
+    }
+}

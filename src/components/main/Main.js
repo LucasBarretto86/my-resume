@@ -4,6 +4,7 @@ import SectionLinks from "../section_links/SectionLinks"
 import SectionSkills from "../section_skills/SectionSkills"
 import SectionParagraphs from "../section_paragraphs/SectionParagraphs"
 import SectionInfos from "../section_infos/SectionInfos"
+import "./Main.scss"
 
 export default class Main {
     constructor(props) {

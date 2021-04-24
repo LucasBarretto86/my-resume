@@ -1,0 +1,26 @@
+#app {
+    * {
+        text-justify: newspaper;
+    }
+
+    h3 {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 8px;
+        width: 100%;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin-bottom: 4px;
+        width: 100%;
+    }
+
+    a {
+        font-weight: 600;
+    }
+
+    p {
+        max-inline-size: 78ch;
+    }
+}

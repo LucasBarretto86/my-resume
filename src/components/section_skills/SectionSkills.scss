@@ -1,0 +1,33 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        text-align: center;
+    }
+
+    &__items {
+        width: 100%;
+    }
+
+    meter {
+        display: block;
+        width: 80%;
+        margin: 8px auto 16px;
+    }
+
+    meter::-webkit-meter-bar {
+        background: transparent;
+        border: 1px solid var(--primary-color);
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    meter::-webkit-meter-optimum-value {
+        background: var(--primary-color);
+
+    }
+
+}

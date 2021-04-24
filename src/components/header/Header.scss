@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        margin-bottom: 8px;
+    }
+
+    &__block--top {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-column-gap: 48px;
+
+        img {
+            grid-column: 1;
+        }
+
+        h1 {
+            grid-column: 2;
+        }
+    }
+
+    &__info {
+        span {
+            display: inline-block;
+        }
+
+        span+span {
+            position: relative;
+            padding-left: 3ch;
+
+            &:before {
+                content: "|";
+                position: absolute;
+                top: 0;
+                left: 1.5ch;
+                width: 3ch;
+                height: 100%;
+            }
+        }
+    }
+
+    &__phone {
+        img {
+            height: 12px;
+            margin-left: 8px;
+        }
+    }
+}

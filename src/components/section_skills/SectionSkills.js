@@ -1,4 +1,5 @@
 import Component from "../../libs/component";
+import "./SectionSkills.scss";
 
 export default class SectionSkills {
     constructor(props) {
@@ -9,8 +10,8 @@ export default class SectionSkills {
 
     render() {
         return Component.build("section", "", { id: "skills", class: "skills" },
-            ["h3", this.props.header, { class: "header" }],
-            ["div", "", { class: "items" }, ...this.items(this.props.items)]
+            ["h3", this.props.header, { class: "skills__header" }],
+            ["div", "", { class: "skills__items" }, ...this.items(this.props.items)]
         )
     }
 

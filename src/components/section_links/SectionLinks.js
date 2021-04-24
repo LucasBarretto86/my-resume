@@ -1,5 +1,5 @@
 import Component from "../../libs/component";
-
+import "./SectionLinks.scss";
 export default class LinksList {
     constructor(props) {
         this.props = props
@@ -8,8 +8,8 @@ export default class LinksList {
     }
 
     render() {
-        return Component.build("section", "", { id: this.props.header, class: this.props.header },
-            ["h3", this.props.header],
+        return Component.build("section", "", { id: this.props.header, class: "links" },
+            ["h3", this.props.header, { class: "links__header" }],
             ["ul", "", {}, ...this.items(this.props.items)]
         )
     }

@@ -1,4 +1,5 @@
 import Component from "../../libs/component";
+import "./SectionPersonal.scss";
 
 export default class SectionPersonal {
     constructor(props) {
@@ -9,11 +10,11 @@ export default class SectionPersonal {
 
 
     render() {
-        return Component.build("section", "", { id: "personal" },
+        return Component.build("section", "", { id: "personal", class: "personal" },
             ["h3", this.props.header, { class: "personal__header" }],
             ["p", this.fullAddress(), { class: "personal__address" }],
             ["p", this.phone(), { class: "personal__phone" }],
-            ["p", this.props.email, { class: "personal__email" }]
+            ["a", this.props.email, { class: "personal__email", href: `mailto:${this.props.email}` }]
         )
     }
 

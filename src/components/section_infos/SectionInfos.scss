@@ -1,0 +1,9 @@
+.infos {
+    .items__item + .items__item {
+        margin-top: 8px;
+    }
+
+    .item__from-to, .item__details {
+        font-style: italic;
+    }
+}
