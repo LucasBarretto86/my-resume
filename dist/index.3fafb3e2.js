@@ -455,14 +455,13 @@ var _componentsFooterFooter = require("./components/footer/Footer");
 var _componentsFooterFooterDefault = _parcelHelpers.interopDefault(_componentsFooterFooter);
 var _libsPdf_generator = require("./libs/pdf_generator");
 require("./index.scss");
-console.log(_libsPdf_generator.PDFGenerator);
 document.body.append(_libsComponentDefault.default.build("div", "", {
   id: "app",
   class: "app"
 }, ["div", "", {
   id: "resume"
 }, new _componentsHeaderHeaderDefault.default(_profileJsonDefault.default.personal), new _componentsMainMainDefault.default(_profileJsonDefault.default)], new _componentsFooterFooterDefault.default({
-  module: _libsPdf_generator.PDFGenerator
+  generate: _libsPdf_generator.PDFGenerator.generate
 })));
 
 },{"./components/main/Main":"6YhKd","./index.scss":"5iJih","../profile.json":"25Uuk","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./libs/component":"7HUi1","./components/header/Header":"2jpsH","./components/footer/Footer":"2A98h","./libs/pdf_generator":"5px6J"}],"6YhKd":[function(require,module,exports) {
@@ -507,12 +506,14 @@ _parcelHelpers.defineInteropFlag(exports);
 class Component {
   static build(tag, content = "", options = {}, ...children) {
     let element = document.createElement(tag, options);
-    let keys = Object.keys(options);
     if (content !== "") element.innerText = content;
-    if (keys.length > 0) {
-      let events = Object.entries(options).filter(option => option[0].match(/controller|action|target/));
-      console.log(events);
-      keys.forEach(key => element.setAttribute(key, options[key]));
+    if (Object.keys(options).length > 0) {
+      let event = Object.entries(options).filter(option => option[0].match(/on\w*/)).flat();
+      if (event.length > 0) {
+        element.addEventListener(event[0].slice(2), event[1]);
+        delete options[event[0]];
+      }
+      Object.keys(options).forEach(key => element.setAttribute(key, options[key]));
     }
     if (children.length > 0) {
       children.forEach(child => {
@@ -817,11 +818,9 @@ class Footer {
     return _libsComponentDefault.default.build("footer", "", {
       id: "footer",
       class: "footer"
-    }, // ["button", "generate PDF", { event: { function: this.props.module.generate, action: "click" } }]
-    ["button", "generate PDF", {
-      class: "footer__button footer__button--pdf",
-      "data-controller": "pdf_generator",
-      "data-action": "click->generate"
+    }, ["button", "generate PDF", {
+      onclick: this.props.generate,
+      class: "footer__button footer__button--pdf"
     }]);
   }
 }
@@ -835,11 +834,8 @@ _parcelHelpers.export(exports, "PDFGenerator", function () {
 });
 const PDFGenerator = {
   generate() {
-    const generator = new jsPDF();
-    generator.fromHTML(document.querySelector("#resume"), 15, 15, {
-      'width': 170
-    });
-    generator.save('CV-Lucas-Barretto-e-Silva.pdf');
+    const pdf = new jsPDF();
+    pdf.addHTML(document.querySelector("#resume"), () => pdf.save('CV-Lucas-Barretto-e-Silva.pdf'));
   }
 };
 
