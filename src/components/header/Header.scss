@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 48px;
 
     h1 {
         margin-bottom: 8px;
@@ -36,10 +37,10 @@
             padding-left: 3ch;
 
             &:before {
-                content: "|";
+                content: "—";
                 position: absolute;
                 top: 0;
-                left: 1.5ch;
+                left: 1ch;
                 width: 3ch;
                 height: 100%;
             }

@@ -12,6 +12,6 @@ document.body.append(Component.build("div", "", { id: "app", class: "app" },
     ["div", "", { id: "resume" },
         new Header(profile.personal),
         new Main(profile),
-        new Footer({ module: PDFGenerator })
-    ]
+    ],
+    new Footer({ module: PDFGenerator })
 ))

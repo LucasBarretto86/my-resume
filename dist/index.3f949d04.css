@@ -98,11 +98,23 @@
 #app p {
   max-inline-size: 78ch;
 }
+#app #resume {
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+  height: 100%;
+  margin: 0 auto;
+  grid-row-gap: 32px;
+  grid-column-gap: 32px;
+  padding: 88px 56px 120px;
+}
+@charset "UTF-8";
 .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 48px;
 }
 .header h1 {
   margin-bottom: 8px;
@@ -130,10 +142,10 @@
   padding-left: 3ch;
 }
 .header__info span + span:before {
-  content: "|";
+  content: "—";
   position: absolute;
   top: 0;
-  left: 1.5ch;
+  left: 1ch;
   width: 3ch;
   height: 100%;
 }
@@ -148,5 +160,19 @@
   left: auto;
   right: 0;
   height: 24px;
+}
+.footer {
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72%;
+  padding: 24px;
+}
+.footer__button--pdf {
+  color: var(--secondary-color);
+  background-color: var(--default-color);
 }
 /*# sourceMappingURL=index.3f949d04.css.map */

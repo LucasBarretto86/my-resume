@@ -461,9 +461,9 @@ document.body.append(_libsComponentDefault.default.build("div", "", {
   class: "app"
 }, ["div", "", {
   id: "resume"
-}, new _componentsHeaderHeaderDefault.default(_profileJsonDefault.default.personal), new _componentsMainMainDefault.default(_profileJsonDefault.default), new _componentsFooterFooterDefault.default({
+}, new _componentsHeaderHeaderDefault.default(_profileJsonDefault.default.personal), new _componentsMainMainDefault.default(_profileJsonDefault.default)], new _componentsFooterFooterDefault.default({
   module: _libsPdf_generator.PDFGenerator
-})]));
+})));
 
 },{"./components/main/Main":"6YhKd","./index.scss":"5iJih","../profile.json":"25Uuk","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./libs/component":"7HUi1","./components/header/Header":"2jpsH","./components/footer/Footer":"2A98h","./libs/pdf_generator":"5px6J"}],"6YhKd":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
@@ -807,6 +807,7 @@ var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _libsComponent = require("../../libs/component");
 var _libsComponentDefault = _parcelHelpers.interopDefault(_libsComponent);
+require("./Footer.scss");
 class Footer {
   constructor(props) {
     this.props = props;
@@ -818,6 +819,7 @@ class Footer {
       class: "footer"
     }, // ["button", "generate PDF", { event: { function: this.props.module.generate, action: "click" } }]
     ["button", "generate PDF", {
+      class: "footer__button footer__button--pdf",
       "data-controller": "pdf_generator",
       "data-action": "click->generate"
     }]);
@@ -825,7 +827,7 @@ class Footer {
 }
 exports.default = Footer;
 
-},{"../../libs/component":"7HUi1","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"5px6J":[function(require,module,exports) {
+},{"../../libs/component":"7HUi1","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./Footer.scss":"1hmX0"}],"1hmX0":[function() {},{}],"5px6J":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 _parcelHelpers.export(exports, "PDFGenerator", function () {

@@ -23,4 +23,15 @@
     p {
         max-inline-size: 78ch;
     }
+
+    #resume{
+        display: flex;
+        flex-direction: column;
+        width: 72%;
+        height: 100%;
+        margin: 0 auto;
+        grid-row-gap: 32px;
+        grid-column-gap: 32px;
+        padding: 88px 56px 120px;
+    }
 }
