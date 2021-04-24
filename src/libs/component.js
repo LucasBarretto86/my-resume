@@ -1,11 +1,14 @@
 export default class Component {
     static build(tag, content = "", options = {}, ...children) {
         let element = document.createElement(tag, options);
+        let keys = Object.keys(options)
 
         if (content !== "") element.innerText = content
 
-        if (Object.keys(options).length > 0) {
-            Object.keys(options).forEach(key => element.setAttribute(key, options[key]))
+        if (keys.length > 0) {
+            let events = Object.entries(options).filter(option => option[0].match(/controller|action|target/))
+            console.log(events)
+            keys.forEach(key => element.setAttribute(key, options[key]))
         }
 
 

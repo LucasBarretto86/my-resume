@@ -55,10 +55,10 @@
 }
 
 :root {
-    --primary-color: #C8C8C8;
-    --secondary-color: #3c3c5c;
+    --primary-color: #383838;
+    --secondary-color: #FFFFFF;
     --tertiary-color: #5c5c98;
-    --highlight-color: #f8f8f8;
+    --highlight-color: #888888;
     --danger-color: #f85c5c;
     --success-color: #5cf85c;
     --notice-color: #f8f85c;
@@ -125,15 +125,14 @@ summary {
     outline: none;
     cursor: pointer;
 }
-
 #app {
     display: flex;
     flex-direction: column;
     max-width: 1280px;
-    width: 80%;
+    width: 48%;
     height: 100%;
     margin: 0 auto;
     grid-row-gap: 32px;
     grid-column-gap: 32px;
-    padding: 48px 0;
+    padding: 88px 56px;
 }

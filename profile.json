@@ -1,7 +1,7 @@
 {
     "personal": {
         "header": "Informações",
-        "avatar": "https://github.com/Mohamed28/my_resume/blob/master/src/assets/images/pictures/avatar.jpeg",
+        "avatar": "https://github.com/Mohamed28/my-resume/blob/master/src/assets/images/pictures/avatar.jpeg?raw=true",
         "name": "Lucas",
         "surname": "Barretto e Silva",
         "birthday": {
@@ -13,9 +13,10 @@
         "nationality": "brasileiro",
         "civil": "divorciado",
         "phone": {
-            "international": "55",
+            "international": "+55",
             "code": "11",
-            "number": "985979534"
+            "number": "98597-9534",
+            "icon": "https://github.com/Mohamed28/my-resume/blob/master/src/assets/images/icons/whatsapp.png?raw=true"
         },
         "address": {
             "street": "Av. Alda",
@@ -66,7 +67,7 @@
                 {
                     "name": "Caelum",
                     "description": "Formação Java",
-                    "from": "",
+                    "from": "Jul 2017",
                     "to": "Ago 2017",
                     "details": ""
                 },
@@ -87,7 +88,7 @@
                     "description": "Festalab - Desenvolvedor Fullstack Sênior",
                     "from": "",
                     "to": "",
-                    "details": "44 99801281 - guilherme44@hey.com"
+                    "details": "guilherme44@hey.com | +55-44-9980-1281" 
                 }
             ]
         }
