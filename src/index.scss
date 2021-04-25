@@ -3,15 +3,19 @@
         text-justify: newspaper;
     }
 
+    h1 {
+        font-size: 32px;
+    }
+
     h3 {
-        font-size: 22px;
-        line-height: 32px;
+        font-size: 18px;
+        line-height: 22px;
         margin-bottom: 8px;
         width: 100%;
     }
 
     h4 {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 4px;
         width: 100%;
     }
@@ -20,7 +24,20 @@
         font-weight: 600;
     }
 
-    p {
+    p, a {
+        font-size: 12px;
         max-inline-size: 78ch;
+    }
+
+    #resume {
+        display: flex;
+        flex-direction: column;
+        width: 70.936vh; 
+        height:100vh;
+        grid-column-gap: 32px;
+
+        padding: 48px;
+        margin: 0 auto;
+        background-color: var(--secondary-color);
     }
 }

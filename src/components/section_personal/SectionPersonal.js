@@ -1,4 +1,5 @@
 import Component from "../../libs/component";
+import { Formatter } from "../../libs/formatter";
 import "./SectionPersonal.scss";
 
 export default class SectionPersonal {
@@ -12,17 +13,9 @@ export default class SectionPersonal {
     render() {
         return Component.build("section", "", { id: "personal", class: "personal" },
             ["h3", this.props.header, { class: "personal__header" }],
-            ["p", this.fullAddress(), { class: "personal__address" }],
-            ["p", this.phone(), { class: "personal__phone" }],
+            ["p", Formatter.fullAddress(this.props.address), { class: "personal__address" }],
+            ["p", Formatter.phone(this.props.phone), { class: "personal__phone" }],
             ["a", this.props.email, { class: "personal__email", href: `mailto:${this.props.email}` }]
         )
-    }
-
-    fullAddress() {
-        return Object.values(this.props.address).join(", ")
-    }
-
-    phone() {
-        return [this.props.phone.code, this.props.phone.number].join("-")
     }
 }

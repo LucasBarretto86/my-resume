@@ -2,15 +2,17 @@
   "name": "cv-lucas-barretto-e-silva",
   "version": "1.0.0",
   "description": "",
-  "author": "Lucas Barretto e Silva",
-  "main": "dist/index.html",
   "scripts": {
     "start": "parcel -p 5505 src/index.html --open",
     "build": "parcel build src/index.html --no-cache --public-url ./dist/",
     "deploy": "rm -rf dist/* && npm run build && cd dist && cp index.html ../index.html",
     "kills": "kill -9 $(lsof -t -i:5505)"
   },
+  "author": "Lucas Barretto e Silva",
+  "main": "dist/index.html",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "html2canvas": "*",
     "parcel": "^2.0.0-beta.2"
   }
 }

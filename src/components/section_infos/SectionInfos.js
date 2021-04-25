@@ -1,4 +1,5 @@
 import Component from "../../libs/component";
+import { Formatter } from "../../libs/formatter";
 import "./SectionInfos.scss";
 
 export default class SectionInfos {
@@ -25,7 +26,7 @@ export default class SectionInfos {
         return Component.build("div", "", { class: "items__item" },
             ["h4", item.name, { class: "item__name" }],
             ["p", item.description, { class: "item__description" }],
-            ["p", [item.from, item.to].filter(i => i !== "").join(" - "), { class: "item__from-to" }],
+            ["p", Formatter.filteredJoin([item.from, item.to], " — "), { class: "item__from-to" }],
             ["p", item.details, { class: "item__details" }]
         )
     }

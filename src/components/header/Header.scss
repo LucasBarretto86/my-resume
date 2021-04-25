@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 16px;
 
     h1 {
         margin-bottom: 8px;
@@ -10,11 +11,14 @@
 
     &__block--top {
         display: grid;
-        grid-template-columns: 1fr 4fr;
-        grid-column-gap: 48px;
+        grid-template-columns: auto auto;
+        grid-column-gap: 24px;
+        align-items: center;
+        margin-bottom: 16px;
 
         img {
             grid-column: 1;
+            width: 100%;
         }
 
         h1 {
@@ -24,7 +28,7 @@
 
     &__info {
         span {
-            display: inline-block;
+            font-size: 14px;
         }
 
         span+span {
@@ -32,10 +36,10 @@
             padding-left: 3ch;
 
             &:before {
-                content: "|";
+                content: "—";
                 position: absolute;
                 top: 0;
-                left: 1.5ch;
+                left: 1ch;
                 width: 3ch;
                 height: 100%;
             }
@@ -43,9 +47,16 @@
     }
 
     &__phone {
+        position: relative;
+        padding-right: 24px;
+
         img {
-            height: 12px;
-            margin-left: 8px;
+            position: absolute;
+            top: -6px;
+            bottom: 0;
+            left: auto;
+            right: 0;
+            height: 24px;
         }
     }
 }

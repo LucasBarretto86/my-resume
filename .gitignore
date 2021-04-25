@@ -3,3 +3,6 @@
 /.parcel-cache
 package-lock.json
 *.map
+node_modules/
+-lock.json
+*.map
