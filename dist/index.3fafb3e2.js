@@ -464,43 +464,9 @@ document.body.append(_libsComponentDefault.default.build("div", "", {
   generate: _libsPdf_generator.PDFGenerator.generate
 })));
 
-},{"./components/main/Main":"6YhKd","./index.scss":"5iJih","../profile.json":"25Uuk","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./libs/component":"7HUi1","./components/header/Header":"2jpsH","./components/footer/Footer":"2A98h","./libs/pdf_generator":"5px6J"}],"6YhKd":[function(require,module,exports) {
-var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
-_parcelHelpers.defineInteropFlag(exports);
-var _libsComponent = require("../../libs/component");
-var _libsComponentDefault = _parcelHelpers.interopDefault(_libsComponent);
-var _section_personalSectionPersonal = require("../section_personal/SectionPersonal");
-var _section_personalSectionPersonalDefault = _parcelHelpers.interopDefault(_section_personalSectionPersonal);
-var _section_linksSectionLinks = require("../section_links/SectionLinks");
-var _section_linksSectionLinksDefault = _parcelHelpers.interopDefault(_section_linksSectionLinks);
-var _section_skillsSectionSkills = require("../section_skills/SectionSkills");
-var _section_skillsSectionSkillsDefault = _parcelHelpers.interopDefault(_section_skillsSectionSkills);
-var _section_paragraphsSectionParagraphs = require("../section_paragraphs/SectionParagraphs");
-var _section_paragraphsSectionParagraphsDefault = _parcelHelpers.interopDefault(_section_paragraphsSectionParagraphs);
-var _section_infosSectionInfos = require("../section_infos/SectionInfos");
-var _section_infosSectionInfosDefault = _parcelHelpers.interopDefault(_section_infosSectionInfos);
-require("./Main.scss");
-class Main {
-  constructor(props) {
-    this.props = props;
-    return this.render();
-  }
-  render() {
-    return _libsComponentDefault.default.build("main", "", {
-      id: "main",
-      class: "main"
-    }, ["div", "", {
-      id: "sidebar",
-      class: "sidebar"
-    }, new _section_personalSectionPersonalDefault.default(this.props.personal), new _section_linksSectionLinksDefault.default(this.props.links), ...this.props.skills.map(skill => new _section_skillsSectionSkillsDefault.default(skill))], ["div", "", {
-      id: "content",
-      class: "content"
-    }, new _section_paragraphsSectionParagraphsDefault.default(this.props.paragraphs), ...this.props.infos.map(info => new _section_infosSectionInfosDefault.default(info))]);
-  }
-}
-exports.default = Main;
-
-},{"../../libs/component":"7HUi1","../section_personal/SectionPersonal":"5l4hk","../section_links/SectionLinks":"4P7zu","../section_skills/SectionSkills":"7GT2z","../section_paragraphs/SectionParagraphs":"5e35s","../section_infos/SectionInfos":"3QgRt","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./Main.scss":"Es9zW"}],"7HUi1":[function(require,module,exports) {
+},{"../profile.json":"25Uuk","./libs/component":"7HUi1","./components/header/Header":"2jpsH","./components/main/Main":"6YhKd","./components/footer/Footer":"2A98h","./libs/pdf_generator":"5px6J","./index.scss":"5iJih","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"25Uuk":[function(require,module,exports) {
+module.exports = JSON.parse("{\"personal\":{\"header\":\"Informações\",\"avatar\":\"https://github.com/Mohamed28/my-resume/blob/master/src/assets/images/pictures/avatar.jpeg?raw=true\",\"name\":\"Lucas\",\"surname\":\"Barretto e Silva\",\"birthday\":{\"day\":\"05\",\"month\":\"08\",\"year\":\"1986\"},\"email\":\"lucas.barretto86@gmail.com\",\"nationality\":\"brasileiro\",\"civil\":\"divorciado\",\"phone\":{\"international\":\"+55\",\"code\":\"11\",\"number\":\"98597-9534\",\"icon\":\"https://github.com/Mohamed28/my-resume/blob/master/src/assets/images/icons/whatsapp.png?raw=true\"},\"address\":{\"street\":\"Av. Alda\",\"number\":\"1175\",\"neighborhood\":\"Centro\",\"city\":\"Diadema\",\"state\":\"SP\",\"country\":\"Brasil\",\"zipcode\":\"09910-170\"},\"hobbies\":\"Guitarra, desenho, pintura, videogame\",\"position\":\"Desenvolvedor Fullstack Junior\"},\"paragraphs\":{\"header\":\"Carta\",\"contents\":[\"Desenvolvedor de sistemas, formado desde Julho de 2020, com experiência de 2 anos na área, entre estágio e contrato, atualmente trabalhando em aplicação Ruby on Rails, sendo, responsável pelo desenvolvimento e manutenção, tanto frontend, quando no backend, com mais 300 commits e 300mil linhas de código adicionadas ao repositório do projeto, sou familiarizado com o dia a dia e rotina ágil. Agnóstico a linguagens, tenho interesse por oportunidades que me permitam trabalhar para adiquirir e aprimorar conhecimentos.\"]},\"infos\":[{\"header\":\"Formação\",\"items\":[{\"name\":\"FMU - Centro Universitário das Faculdades Metropolitanas Unidas\",\"description\":\"Análise e desenvolvimento de Sistemas\",\"from\":\"Jan 2018\",\"to\":\"Jun 2020\",\"details\":\"\"}]},{\"header\":\"Experiência\",\"items\":[{\"name\":\"Festalab Festas e Eventos\",\"description\":\"Desenvolvedor Fullstack Junior\",\"from\":\"Feb 2019\",\"to\":\"present\",\"details\":\"\"}]},{\"header\":\"Cursos\",\"items\":[{\"name\":\"Caelum\",\"description\":\"Formação Java\",\"from\":\"Jul 2017\",\"to\":\"Ago 2017\",\"details\":\"\"},{\"name\":\"Caelum\",\"description\":\"Desenvolvimento na prática com Spring, Testes, Git e Maven\",\"from\":\"\",\"to\":\"Set 2017\",\"details\":\"\"}]},{\"header\":\"Referências\",\"items\":[{\"name\":\"Guilherme Yamakawa de Oliveira\",\"description\":\"Festalab - Desenvolvedor Fullstack Sênior\",\"from\":\"\",\"to\":\"\",\"details\":\"guilherme44@hey.com | +55-44-9980-1281\"}]}],\"links\":{\"header\":\"Site, Redes e Repos\",\"items\":[{\"name\":\"LinkedIn\",\"link\":\"https://www.linkedin.com/in/lucasbarretto\"},{\"name\":\"Respositório - Pessoal\",\"link\":\"https://github.com/Mohamed28\"},{\"name\":\"Repositório - Festalab\",\"link\":\"https://github.com/lucas-festalab\"},{\"name\":\"Mohamed28's Dome\",\"link\":\"https://mohamed28.github.io/\"}]},\"skills\":[{\"header\":\"Idiomas\",\"items\":[{\"name\":\"Inglês\",\"level\":\"4\"}]}]}");
+},{}],"7HUi1":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 class Component {
@@ -571,7 +537,111 @@ exports.export = function (dest, destName, get) {
     get: get
   });
 };
-},{}],"5l4hk":[function(require,module,exports) {
+},{}],"2jpsH":[function(require,module,exports) {
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _libsComponent = require("../../libs/component");
+var _libsComponentDefault = _parcelHelpers.interopDefault(_libsComponent);
+var _libsFormatter = require("../../libs/formatter");
+require("./Header.scss");
+class Header {
+  constructor(props) {
+    this.props = props;
+    return this.render();
+  }
+  render() {
+    return _libsComponentDefault.default.build("div", "", {
+      id: "header",
+      class: "header"
+    }, ["div", "", {
+      class: "header__block header__block--top"
+    }, ["img", "", {
+      class: "header__avatar",
+      src: this.props.avatar
+    }], ["h1", _libsFormatter.Formatter.fullName(this.props), {
+      class: "header__fullname"
+    }]], ["div", "", {
+      class: "header__block header__block--bottom"
+    }, ["div", "", {
+      class: "header__info"
+    }, ["span", this.props.position, {
+      class: "header__position"
+    }], ["span", _libsFormatter.Formatter.shortAddress(this.props.address), {
+      class: "header__address"
+    }], ["span", _libsFormatter.Formatter.phone(this.props.phone), {
+      class: "header__phone"
+    }, ["img", "", {
+      src: this.props.phone.icon,
+      alt: "whatsapp-icon"
+    }]]]]);
+  }
+}
+exports.default = Header;
+
+},{"../../libs/component":"7HUi1","../../libs/formatter":"2grMX","./Header.scss":"2hArk","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"2grMX":[function(require,module,exports) {
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "Formatter", function () {
+  return Formatter;
+});
+const Formatter = {
+  age(birthday) {
+    return this.filteredJoin([new Date().getFullYear() - Number(birthday.year), "anos"], " ");
+  },
+  fullAddress(address) {
+    return this.filteredJoin(Object.values(address), ", ");
+  },
+  fullName(personal) {
+    return this.filteredJoin([personal.name, personal.surname], " ");
+  },
+  shortAddress(address) {
+    return this.filteredJoin([address.city, address.zipcode, address.country], ", ");
+  },
+  phone(phone) {
+    return this.filteredJoin([phone.international, phone.code, phone.number], "-");
+  },
+  filteredJoin(arr, separator) {
+    return arr.filter(data => data !== "").join(separator);
+  }
+};
+
+},{"@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"2hArk":[function() {},{}],"6YhKd":[function(require,module,exports) {
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _libsComponent = require("../../libs/component");
+var _libsComponentDefault = _parcelHelpers.interopDefault(_libsComponent);
+var _section_personalSectionPersonal = require("../section_personal/SectionPersonal");
+var _section_personalSectionPersonalDefault = _parcelHelpers.interopDefault(_section_personalSectionPersonal);
+var _section_linksSectionLinks = require("../section_links/SectionLinks");
+var _section_linksSectionLinksDefault = _parcelHelpers.interopDefault(_section_linksSectionLinks);
+var _section_skillsSectionSkills = require("../section_skills/SectionSkills");
+var _section_skillsSectionSkillsDefault = _parcelHelpers.interopDefault(_section_skillsSectionSkills);
+var _section_paragraphsSectionParagraphs = require("../section_paragraphs/SectionParagraphs");
+var _section_paragraphsSectionParagraphsDefault = _parcelHelpers.interopDefault(_section_paragraphsSectionParagraphs);
+var _section_infosSectionInfos = require("../section_infos/SectionInfos");
+var _section_infosSectionInfosDefault = _parcelHelpers.interopDefault(_section_infosSectionInfos);
+require("./Main.scss");
+class Main {
+  constructor(props) {
+    this.props = props;
+    return this.render();
+  }
+  render() {
+    return _libsComponentDefault.default.build("main", "", {
+      id: "main",
+      class: "main"
+    }, ["div", "", {
+      id: "sidebar",
+      class: "sidebar"
+    }, new _section_personalSectionPersonalDefault.default(this.props.personal), new _section_linksSectionLinksDefault.default(this.props.links), ...this.props.skills.map(skill => new _section_skillsSectionSkillsDefault.default(skill))], ["div", "", {
+      id: "content",
+      class: "content"
+    }, new _section_paragraphsSectionParagraphsDefault.default(this.props.paragraphs), ...this.props.infos.map(info => new _section_infosSectionInfosDefault.default(info))]);
+  }
+}
+exports.default = Main;
+
+},{"../../libs/component":"7HUi1","../section_personal/SectionPersonal":"5l4hk","../section_links/SectionLinks":"4P7zu","../section_skills/SectionSkills":"7GT2z","../section_paragraphs/SectionParagraphs":"5e35s","../section_infos/SectionInfos":"3QgRt","./Main.scss":"Es9zW","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"5l4hk":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _libsComponent = require("../../libs/component");
@@ -601,34 +671,7 @@ class SectionPersonal {
 }
 exports.default = SectionPersonal;
 
-},{"../../libs/component":"7HUi1","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./SectionPersonal.scss":"60HZU","../../libs/formatter":"2grMX"}],"60HZU":[function() {},{}],"2grMX":[function(require,module,exports) {
-var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
-_parcelHelpers.defineInteropFlag(exports);
-_parcelHelpers.export(exports, "Formatter", function () {
-  return Formatter;
-});
-const Formatter = {
-  age(birthday) {
-    return this.filteredJoin([new Date().getFullYear() - Number(birthday.year), "anos"], " ");
-  },
-  fullAddress(address) {
-    return this.filteredJoin(Object.values(address), ", ");
-  },
-  fullName(personal) {
-    return this.filteredJoin([personal.name, personal.surname], " ");
-  },
-  shortAddress(address) {
-    return this.filteredJoin([address.city, address.zipcode, address.country], ", ");
-  },
-  phone(phone) {
-    return this.filteredJoin([phone.international, phone.code, phone.number], "-");
-  },
-  filteredJoin(arr, separator) {
-    return arr.filter(data => data !== "").join(separator);
-  }
-};
-
-},{"@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"4P7zu":[function(require,module,exports) {
+},{"../../libs/component":"7HUi1","../../libs/formatter":"2grMX","./SectionPersonal.scss":"60HZU","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"60HZU":[function() {},{}],"4P7zu":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _libsComponent = require("../../libs/component");
@@ -660,7 +703,7 @@ class LinksList {
 }
 exports.default = LinksList;
 
-},{"../../libs/component":"7HUi1","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./SectionLinks.scss":"6jLwm"}],"6jLwm":[function() {},{}],"7GT2z":[function(require,module,exports) {
+},{"../../libs/component":"7HUi1","./SectionLinks.scss":"6jLwm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"6jLwm":[function() {},{}],"7GT2z":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _libsComponent = require("../../libs/component");
@@ -700,7 +743,7 @@ class SectionSkills {
 }
 exports.default = SectionSkills;
 
-},{"../../libs/component":"7HUi1","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./SectionSkills.scss":"5tUBC"}],"5tUBC":[function() {},{}],"5e35s":[function(require,module,exports) {
+},{"../../libs/component":"7HUi1","./SectionSkills.scss":"5tUBC","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"5tUBC":[function() {},{}],"5e35s":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _libsComponent = require("../../libs/component");
@@ -760,50 +803,7 @@ class SectionInfos {
 }
 exports.default = SectionInfos;
 
-},{"../../libs/component":"7HUi1","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./SectionInfos.scss":"76Cfm","../../libs/formatter":"2grMX"}],"76Cfm":[function() {},{}],"Es9zW":[function() {},{}],"5iJih":[function() {},{}],"25Uuk":[function(require,module,exports) {
-module.exports = JSON.parse("{\"personal\":{\"header\":\"Informações\",\"avatar\":\"https://github.com/Mohamed28/my-resume/blob/master/src/assets/images/pictures/avatar.jpeg?raw=true\",\"name\":\"Lucas\",\"surname\":\"Barretto e Silva\",\"birthday\":{\"day\":\"05\",\"month\":\"08\",\"year\":\"1986\"},\"email\":\"lucas.barretto86@gmail.com\",\"nationality\":\"brasileiro\",\"civil\":\"divorciado\",\"phone\":{\"international\":\"+55\",\"code\":\"11\",\"number\":\"98597-9534\",\"icon\":\"https://github.com/Mohamed28/my-resume/blob/master/src/assets/images/icons/whatsapp.png?raw=true\"},\"address\":{\"street\":\"Av. Alda\",\"number\":\"1175\",\"neighborhood\":\"Centro\",\"city\":\"Diadema\",\"state\":\"SP\",\"country\":\"Brasil\",\"zipcode\":\"09910-170\"},\"hobbies\":\"Guitarra, desenho, pintura, videogame\",\"position\":\"Desenvolvedor Fullstack Junior\"},\"paragraphs\":{\"header\":\"Carta\",\"contents\":[\"Desenvolvedor de sistemas, formado desde Julho de 2020, com experiência de 2 anos na área, entre estágio e contrato, atualmente trabalhando em aplicação Ruby on Rails, sendo, responsável pelo desenvolvimento e manutenção, tanto frontend, quando no backend, com mais 300 commits e 300mil linhas de código adicionadas ao repositório do projeto, sou familiarizado com o dia a dia e rotina ágil. Agnóstico a linguagens, tenho interesse por oportunidades que me permitam trabalhar para adiquirir e aprimorar conhecimentos.\"]},\"infos\":[{\"header\":\"Formação\",\"items\":[{\"name\":\"FMU - Centro Universitário das Faculdades Metropolitanas Unidas\",\"description\":\"Análise e desenvolvimento de Sistemas\",\"from\":\"Jan 2018\",\"to\":\"Jun 2020\",\"details\":\"\"}]},{\"header\":\"Experiência\",\"items\":[{\"name\":\"Festalab Festas e Eventos\",\"description\":\"Desenvolvedor Fullstack Junior\",\"from\":\"Feb 2019\",\"to\":\"present\",\"details\":\"\"}]},{\"header\":\"Cursos\",\"items\":[{\"name\":\"Caelum\",\"description\":\"Formação Java\",\"from\":\"Jul 2017\",\"to\":\"Ago 2017\",\"details\":\"\"},{\"name\":\"Caelum\",\"description\":\"Desenvolvimento na prática com Spring, Testes, Git e Maven\",\"from\":\"\",\"to\":\"Set 2017\",\"details\":\"\"}]},{\"header\":\"Referências\",\"items\":[{\"name\":\"Guilherme Yamakawa de Oliveira\",\"description\":\"Festalab - Desenvolvedor Fullstack Sênior\",\"from\":\"\",\"to\":\"\",\"details\":\"guilherme44@hey.com | +55-44-9980-1281\"}]}],\"links\":{\"header\":\"Site, Redes e Repos\",\"items\":[{\"name\":\"LinkedIn\",\"link\":\"https://www.linkedin.com/in/lucasbarretto\"},{\"name\":\"Respositório - Pessoal\",\"link\":\"https://github.com/Mohamed28\"},{\"name\":\"Repositório - Festalab\",\"link\":\"https://github.com/lucas-festalab\"},{\"name\":\"Mohamed28's Dome\",\"link\":\"https://mohamed28.github.io/\"}]},\"skills\":[{\"header\":\"Idiomas\",\"items\":[{\"name\":\"Inglês\",\"level\":\"4\"}]}]}");
-},{}],"2jpsH":[function(require,module,exports) {
-var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
-_parcelHelpers.defineInteropFlag(exports);
-var _libsComponent = require("../../libs/component");
-var _libsComponentDefault = _parcelHelpers.interopDefault(_libsComponent);
-var _libsFormatter = require("../../libs/formatter");
-require("./Header.scss");
-class Header {
-  constructor(props) {
-    this.props = props;
-    return this.render();
-  }
-  render() {
-    return _libsComponentDefault.default.build("div", "", {
-      id: "header",
-      class: "header"
-    }, ["div", "", {
-      class: "header__block header__block--top"
-    }, ["img", "", {
-      class: "header__avatar",
-      src: this.props.avatar
-    }], ["h1", _libsFormatter.Formatter.fullName(this.props), {
-      class: "header__fullname"
-    }]], ["div", "", {
-      class: "header__block header__block--bottom"
-    }, ["div", "", {
-      class: "header__info"
-    }, ["span", this.props.position, {
-      class: "header__position"
-    }], ["span", _libsFormatter.Formatter.shortAddress(this.props.address), {
-      class: "header__address"
-    }], ["span", _libsFormatter.Formatter.phone(this.props.phone), {
-      class: "header__phone"
-    }, ["img", "", {
-      src: this.props.phone.icon,
-      alt: "whatsapp-icon"
-    }]]]]);
-  }
-}
-exports.default = Header;
-
-},{"../../libs/component":"7HUi1","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./Header.scss":"2hArk","../../libs/formatter":"2grMX"}],"2hArk":[function() {},{}],"2A98h":[function(require,module,exports) {
+},{"../../libs/component":"7HUi1","../../libs/formatter":"2grMX","./SectionInfos.scss":"76Cfm","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"76Cfm":[function() {},{}],"Es9zW":[function() {},{}],"2A98h":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 var _libsComponent = require("../../libs/component");
@@ -826,7 +826,7 @@ class Footer {
 }
 exports.default = Footer;
 
-},{"../../libs/component":"7HUi1","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","./Footer.scss":"1hmX0"}],"1hmX0":[function() {},{}],"5px6J":[function(require,module,exports) {
+},{"../../libs/component":"7HUi1","./Footer.scss":"1hmX0","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"1hmX0":[function() {},{}],"5px6J":[function(require,module,exports) {
 var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
 _parcelHelpers.defineInteropFlag(exports);
 _parcelHelpers.export(exports, "PDFGenerator", function () {
@@ -834,11 +834,12 @@ _parcelHelpers.export(exports, "PDFGenerator", function () {
 });
 const PDFGenerator = {
   generate() {
-    const pdf = new jsPDF();
+    const pdf = new jsPDF('p', 'pt', 'a4');
+    document.querySelector(".header__avatar").classList.add("hidden");
     pdf.addHTML(document.querySelector("#resume"), () => pdf.save('CV-Lucas-Barretto-e-Silva.pdf'));
   }
 };
 
-},{"@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}]},["7yCo1","5rkFb"], "5rkFb", "parcelRequire52bd")
+},{"@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y"}],"5iJih":[function() {},{}]},["7yCo1","5rkFb"], "5rkFb", "parcelRequire52bd")
 
 //# sourceMappingURL=index.3fafb3e2.js.map
