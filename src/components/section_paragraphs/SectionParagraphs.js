@@ -1,14 +1,12 @@
-import Component from "../../libs/component";
+import Componentizer from "lucasbarretto86.componentizer";
 
-export default class SimpleList {
+export default class SimpleList extends Componentizer {
     constructor(props) {
-        this.props = props
-
-        return this.render()
+        super(props)
     }
 
     render() {
-        return Component.build("section", "", { id: "paragraphs", class: "paragraphs" },
+        return this.build("section", "", { id: "paragraphs", class: "paragraphs" },
             ["h3", this.props.header],
             ...this.props.contents.map(content => ["p", content]),
         )

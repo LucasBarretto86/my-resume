@@ -1,128 +1,262 @@
 {
-    "personal": {
-        "header": "Informações",
-        "avatar": "https://github.com/Mohamed28/my-resume/blob/master/src/assets/images/pictures/avatar.jpeg?raw=true",
-        "name": "Lucas",
-        "surname": "Barretto e Silva",
-        "birthday": {
-            "day": "05",
-            "month": "08",
-            "year": "1986"
+    "pt": {
+        "personal": {
+            "header": "Informações",
+            "name": "Lucas",
+            "surname": "Barretto e Silva",
+            "birthday": {
+                "day": "05",
+                "month": "08",
+                "year": "1986"
+            },
+            "email": "lucas.barretto86@gmail.com",
+            "nationality": "brasileiro",
+            "civil": "divorciado",
+            "phone": {
+                "international": "+55",
+                "code": "11",
+                "number": "98597-9534"
+            },
+            "address": {
+                "street": "Av. Alda",
+                "number": "1175",
+                "neighborhood": "Centro",
+                "city": "Diadema",
+                "state": "SP",
+                "country": "Brasil",
+                "zipcode": "09910-170"
+            },
+            "hobbies": "Guitarra, desenho, pintura, videogame",
+            "position": "Desenvolvedor Fullstack Junior"
         },
-        "email": "lucas.barretto86@gmail.com",
-        "nationality": "brasileiro",
-        "civil": "divorciado",
-        "phone": {
-            "international": "+55",
-            "code": "11",
-            "number": "98597-9534",
-            "icon": "https://github.com/Mohamed28/my-resume/blob/master/src/assets/images/icons/whatsapp.png?raw=true"
-        },
-        "address": {
-            "street": "Av. Alda",
-            "number": "1175",
-            "neighborhood": "Centro",
-            "city": "Diadema",
-            "state": "SP",
-            "country": "Brasil",
-            "zipcode": "09910-170"
-        },
-        "hobbies": "Guitarra, desenho, pintura, videogame",
-        "position": "Desenvolvedor Fullstack Junior"
-    },
-    "paragraphs": {
-        "header": "Carta",
-        "contents": [
-            "Desenvolvedor de sistemas, formado desde Julho de 2020, com experiência de 2 anos na área, entre estágio e contrato, atualmente trabalhando em aplicação Ruby on Rails, sendo, responsável pelo desenvolvimento e manutenção, tanto frontend, quando no backend, com mais 300 commits e 300mil linhas de código adicionadas ao repositório do projeto, sou familiarizado com o dia a dia e rotina ágil. Agnóstico a linguagens, tenho interesse por oportunidades que me permitam trabalhar para adiquirir e aprimorar conhecimentos."
-        ]
-    },
-    "infos": [
-        {
-            "header": "Formação",
-            "items": [
-                {
-                    "name": "FMU - Centro Universitário das Faculdades Metropolitanas Unidas",
-                    "description": "Análise e desenvolvimento de Sistemas",
-                    "from": "Jan 2018",
-                    "to": "Jun 2020",
-                    "details": ""
-                }
+        "paragraphs": {
+            "header": "Carta",
+            "contents": [
+                "Desenvolvedor de sistemas, formado em 2020, com experiência de 3 anos na área, entre estágio e contrato, atualmente trabalhando em monolíto Ruby on Rails, sendo, responsável pelo desenvolvimento e manutenção, tanto frontend, quando no backend, com mais 500 commits e 500mil linhas de código adicionadas ao repositório do projeto, sou familiarizado com o dia a dia do desnvolvimento ágil. Agnóstico a linguagens, tenho interesse em oportunidades que me permitam trabalhar para adiquirir e aprimorar meus conhecimentos."
             ]
         },
-        {
-            "header": "Experiência",
+        "infos": [
+            {
+                "header": "Formação",
+                "items": [
+                    {
+                        "name": "FMU - Centro Universitário das Faculdades Metropolitanas Unidas",
+                        "description": "Análise e desenvolvimento de Sistemas",
+                        "from": "Jan 2018",
+                        "to": "Jun 2020",
+                        "details": ""
+                    }
+                ]
+            },
+            {
+                "header": "Experiência",
+                "items": [
+                    {
+                        "name": "Festalab Festas e Eventos",
+                        "description": "Desenvolvedor Fullstack Junior",
+                        "from": "Feb 2019",
+                        "to": "present",
+                        "details": ""
+                    }
+                ]
+            },
+            {
+                "header": "Cursos",
+                "items": [
+                    {
+                        "name": "Caelum",
+                        "description": "Formação Java",
+                        "from": "Jul 2017",
+                        "to": "Ago 2017",
+                        "details": ""
+                    },
+                    {
+                        "name": "Caelum",
+                        "description": "Desenvolvimento na prática com Spring, Testes, Git e Maven",
+                        "from": "",
+                        "to": "Set 2017",
+                        "details": ""
+                    }
+                ]
+            },
+            {
+                "header": "Referências",
+                "items": [
+                    {
+                        "name": "Guilherme Yamakawa de Oliveira",
+                        "description": "Festalab - Desenvolvedor Fullstack Sênior",
+                        "from": "",
+                        "to": "",
+                        "details": "guilherme44@hey.com | +55-44-9980-1281"
+                    }
+                ]
+            }
+        ],
+        "links": {
+            "header": "Site, Redes e Repos",
             "items": [
                 {
-                    "name": "Festalab Festas e Eventos",
-                    "description": "Desenvolvedor Fullstack Junior",
-                    "from": "Feb 2019",
-                    "to": "present",
-                    "details": ""
-                }
-            ]
-        },
-        {
-            "header": "Cursos",
-            "items": [
-                {
-                    "name": "Caelum",
-                    "description": "Formação Java",
-                    "from": "Jul 2017",
-                    "to": "Ago 2017",
-                    "details": ""
+                    "name": "LinkedIn",
+                    "type": "linkedin",
+                    "link": "https://www.linkedin.com/in/lucasbarretto"
                 },
                 {
-                    "name": "Caelum",
-                    "description": "Desenvolvimento na prática com Spring, Testes, Git e Maven",
-                    "from": "",
-                    "to": "Set 2017",
-                    "details": ""
+                    "name": "Repositório - Pessoal",
+                    "type": "github",
+                    "link": "https://github.com/LucasBarreto86"
+                },
+                {
+                    "name": "Repositório - Festalab",
+                    "type": "github",
+                    "link": "https://github.com/lucas-festalab"
+                },
+                {
+                    "name": "LucasBarreto86's Dome",
+                    "type": "website",
+                    "link": "https://lucasbarretto86.github.io/"
                 }
             ]
         },
-        {
-            "header": "Referências",
-            "items": [
-                {
-                    "name": "Guilherme Yamakawa de Oliveira",
-                    "description": "Festalab - Desenvolvedor Fullstack Sênior",
-                    "from": "",
-                    "to": "",
-                    "details": "guilherme44@hey.com | +55-44-9980-1281" 
-                }
-            ]
-        }
-    ],
-    "links": {
-        "header": "Site, Redes e Repos",
-        "items": [
+        "skills": [
             {
-                "name": "LinkedIn",
-                "link": "https://www.linkedin.com/in/lucasbarretto"
-            },
-            {
-                "name": "Respositório - Pessoal",
-                "link": "https://github.com/Mohamed28"
-            },
-            {
-                "name": "Repositório - Festalab",
-                "link": "https://github.com/lucas-festalab"
-            },
-            {
-                "name": "Mohamed28's Dome",
-                "link": "https://mohamed28.github.io/"
+                "header": "Idiomas",
+                "items": [
+                    {
+                        "name": "Inglês",
+                        "level": "4"
+                    }
+                ]
             }
         ]
     },
-    "skills": [
-        {
-            "header": "Idiomas",
+    "en": {
+        "personal": {
+            "header": "Basic infomartion",
+            "name": "Lucas",
+            "surname": "Barretto e Silva",
+            "birthday": {
+                "day": "05",
+                "month": "08",
+                "year": "1986"
+            },
+            "email": "lucas.barretto86@gmail.com",
+            "nationality": "brazilian",
+            "civil": "divorced",
+            "phone": {
+                "international": "+55",
+                "code": "11",
+                "number": "98597-9534"
+            },
+            "address": {
+                "street": "Av. Alda",
+                "number": "1175",
+                "neighborhood": "Centro",
+                "city": "Diadema",
+                "state": "SP",
+                "country": "Brasil",
+                "zipcode": "09910-170"
+            },
+            "hobbies": "play guitar, drawing, amature oil painter, videogame",
+            "position": "Fullstack Developer Ruby On Rails"
+        },
+        "paragraphs": {
+            "header": "Letter",
+            "contents": [
+                "Desenvolvedor de sistemas, formado desde Julho de 2020, com experiência de 2 anos na área, entre estágio e contrato, atualmente trabalhando em aplicação Ruby on Rails, sendo, responsável pelo desenvolvimento e manutenção, tanto frontend, quando no backend, com mais 300 commits e 300mil linhas de código adicionadas ao repositório do projeto, sou familiarizado com o dia a dia e rotina ágil. Agnóstico a linguagens, tenho interesse por oportunidades que me permitam trabalhar para adiquirir e aprimorar conhecimentos."
+            ]
+        },
+        "infos": [
+            {
+                "header": "Academic",
+                "items": [
+                    {
+                        "name": "FMU - Centro Universitário das Faculdades Metropolitanas Unidas",
+                        "description": "Technologist in System Analysis",
+                        "from": "Jan 2018",
+                        "to": "Jun 2020",
+                        "details": ""
+                    }
+                ]
+            },
+            {
+                "header": "Area experience",
+                "items": [
+                    {
+                        "name": "Festalab Festas e Eventos",
+                        "description": "Intern, Junior Developer and currently Fullstack Developer",
+                        "from": "Feb 2019",
+                        "to": "present",
+                        "details": ""
+                    }
+                ]
+            },
+            {
+                "header": "Courses and Cerfications",
+                "items": [
+                    {
+                        "name": "Caelum",
+                        "description": "Formação Java",
+                        "from": "Jul 2017",
+                        "to": "Aug 2017",
+                        "details": ""
+                    },
+                    {
+                        "name": "Caelum",
+                        "description": "Desenvolvimento na prática com Spring, Testes, Git e Maven",
+                        "from": "",
+                        "to": "Sep 2017",
+                        "details": ""
+                    }
+                ]
+            },
+            {
+                "header": "References",
+                "items": [
+                    {
+                        "name": "Guilherme Yamakawa de Oliveira",
+                        "description": "FlexCode - Senior Fullstack Ruby on Rails Developer",
+                        "from": "",
+                        "to": "",
+                        "details": "guilherme44@hey.com | +55-44-9980-1281"
+                    }
+                ]
+            }
+        ],
+        "links": {
+            "header": "Site, Social and Repos",
             "items": [
                 {
-                    "name": "Inglês",
-                    "level": "4"
+                    "name": "LinkedIn",
+                    "type": "linkedin",
+                    "link": "https://www.linkedin.com/in/lucasbarretto"
+                },
+                {
+                    "name": "Repo - Personal",
+                    "type": "github",
+                    "link": "https://github.com/LucasBarreto86"
+                },
+                {
+                    "name": "Repo - Festalab",
+                    "type": "github",
+                    "link": "https://github.com/lucas-festalab"
+                },
+                {
+                    "name": "LucasBarreto86's Dome",
+                    "type": "website",
+                    "link": "https://lucasbarretto86.github.io/"
                 }
             ]
-        }
-    ]
+        },
+        "skills": [
+            {
+                "header": "Idioms",
+                "items": [
+                    {
+                        "name": "English",
+                        "level": "4"
+                    }
+                ]
+            }
+        ]
+    }
 }

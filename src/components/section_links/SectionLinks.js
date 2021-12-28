@@ -1,14 +1,17 @@
-import Component from "../../libs/component";
-import "./SectionLinks.scss";
-export default class LinksList {
-    constructor(props) {
-        this.props = props
+import Componentizer from "lucasbarretto86.componentizer";
 
-        return this.render()
+import github_icon from "../../assets/images/icons/github.png"
+import linkedin_icon from "../../assets/images/icons/linkedin.png"
+import version_control_icon from "../../assets/images/icons/version-control.png"
+
+import "./SectionLinks.scss";
+export default class LinksList extends Componentizer {
+    constructor(props) {
+        super(props)
     }
 
     render() {
-        return Component.build("section", "", { id: this.props.header, class: "links" },
+        return this.build("section", "", { id: this.props.header, class: "links" },
             ["h3", this.props.header, { class: "links__header" }],
             ["ul", "", {}, ...this.items(this.props.items)]
         )
@@ -21,6 +24,6 @@ export default class LinksList {
     }
 
     item(item) {
-        return Component.build("li", "", {}, ["a", item.name, { href: item.link, target: "_blank" }])
+        return this.build("li", "", {}, ["a", item.name, { href: item.link, target: "_blank" }])
     }
 }

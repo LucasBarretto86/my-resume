@@ -3,27 +3,27 @@
     font-family: 'Open Sans';
     font-weight: 400;
     font-style: normal;
-    src: url('https://mohamed28.github.io/src/assets/fonts/open-sans-regular.ttf') format('truetype'),
-        url('https://mohamed28.github.io/src/assets/fonts/open-sans-regular.woff') format('woff'),
-        url('https://mohamed28.github.io/src/assets/fonts/open-sans-regular.woff2') format('woff2');
+    src: url('https://lucasbarretto86.github.io/src/assets/fonts/open-sans-regular.ttf') format('truetype'),
+        url('https://lucasbarretto86.github.io/src/assets/fonts/open-sans-regular.woff') format('woff'),
+        url('https://lucasbarretto86.github.io/src/assets/fonts/open-sans-regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-weight: 600;
     font-style: normal;
-    src: url('https://mohamed28.github.io/src/assets/fonts/open-sans-bold.ttf') format('truetype'),
-        url('https://mohamed28.github.io/src/assets/fonts/open-sans-bold.woff') format('woff'),
-        url('https://mohamed28.github.io/src/assets/fonts/open-sans-bold.woff2') format('woff2');
+    src: url('https://lucasbarretto86.github.io/src/assets/fonts/open-sans-bold.ttf') format('truetype'),
+        url('https://lucasbarretto86.github.io/src/assets/fonts/open-sans-bold.woff') format('woff'),
+        url('https://lucasbarretto86.github.io/src/assets/fonts/open-sans-bold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-weight: 800;
     font-style: normal;
-    src: url('https://mohamed28.github.io/src/assets/fonts/open-sans-extra-bold.ttf') format('truetype'),
-        url('https://mohamed28.github.io/src/assets/fonts/open-sans-extra-bold.woff') format('woff'),
-        url('https://mohamed28.github.io/src/assets/fonts/open-sans-extra-bold.woff2') format('woff2');
+    src: url('https://lucasbarretto86.github.io/src/assets/fonts/open-sans-extra-bold.ttf') format('truetype'),
+        url('https://lucasbarretto86.github.io/src/assets/fonts/open-sans-extra-bold.woff') format('woff'),
+        url('https://lucasbarretto86.github.io/src/assets/fonts/open-sans-extra-bold.woff2') format('woff2');
 }
 
 // Manjari - Used for paragraphs, regular text, mostly all regular content.
@@ -31,27 +31,27 @@
     font-family: 'Manjari';
     font-weight: 200;
     font-style: normal;
-    src: url('https://mohamed28.github.io/src/assets/fonts/manjari-thin.ttf') format('truetype'),
-        url('https://mohamed28.github.io/src/assets/fonts/manjari-thin.woff') format('woff'),
-        url('https://mohamed28.github.io/src/assets/fonts/manjari-thin.woff2') format('woff2');
+    src: url('https://lucasbarretto86.github.io/src/assets/fonts/manjari-thin.ttf') format('truetype'),
+        url('https://lucasbarretto86.github.io/src/assets/fonts/manjari-thin.woff') format('woff'),
+        url('https://lucasbarretto86.github.io/src/assets/fonts/manjari-thin.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Manjari';
     font-weight: 400;
     font-style: normal;
-    src: url('https://mohamed28.github.io/src/assets/fonts/manjari-regular.ttf') format('truetype'),
-        url('https://mohamed28.github.io/src/assets/fonts/manjari-regular.woff') format('woff'),
-        url('https://mohamed28.github.io/src/assets/fonts/manjari-regular.woff2') format('woff2');
+    src: url('https://lucasbarretto86.github.io/src/assets/fonts/manjari-regular.ttf') format('truetype'),
+        url('https://lucasbarretto86.github.io/src/assets/fonts/manjari-regular.woff') format('woff'),
+        url('https://lucasbarretto86.github.io/src/assets/fonts/manjari-regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Manjari';
     font-weight: 600;
     font-style: normal;
-    src: url('https://mohamed28.github.io/src/assets/fonts/manjari-bold.ttf') format('truetype'),
-        url('https://mohamed28.github.io/src/assets/fonts/manjari-bold.woff') format('woff'),
-        url('https://mohamed28.github.io/src/assets/fonts/manjari-bold.woff2') format('woff2');
+    src: url('https://lucasbarretto86.github.io/src/assets/fonts/manjari-bold.ttf') format('truetype'),
+        url('https://lucasbarretto86.github.io/src/assets/fonts/manjari-bold.woff') format('woff'),
+        url('https://lucasbarretto86.github.io/src/assets/fonts/manjari-bold.woff2') format('woff2');
 }
 
 :root {
@@ -138,18 +138,6 @@ summary {
     list-style-type: none;
     outline: none;
     cursor: pointer;
-}
-
-#app {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1280px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    background-color: var(--secondary-color);
 }
 
 .hidden {
