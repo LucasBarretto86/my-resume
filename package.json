@@ -1,18 +1,21 @@
 {
   "name": "cv-lucas-barretto-e-silva",
   "version": "1.0.0",
-  "description": "",
+  "source": "dist/index.html",
+  "author": "Lucas Barretto e Silva",
+  "description": "My personal resume",
+  "license": "ISC",
   "scripts": {
-    "start": "parcel -p 5505 src/index.html --open",
-    "build": "parcel build src/index.html --no-cache --public-url ./dist/",
-    "deploy": "rm -rf dist/* && npm run build && cd dist && cp index.html ../index.html",
+    "start": "parcel -p 5505 src/index.html --no-cache --open",
+    "build": "rm -rf ./dist && parcel build src/index.html --no-cache --public-url ./dist/",
+    "deploy": "rm -rf ./build && parcel build src/index.html --no-cache --public-url ./build/ && cd build && cp index.html ../index.html",
     "kills": "kill -9 $(lsof -t -i:5505)"
   },
-  "author": "Lucas Barretto e Silva",
-  "main": "dist/index.html",
   "devDependencies": {
+    "@parcel/transformer-image": "^2.0.1",
     "@parcel/transformer-sass": "^2.0.0-beta.2",
     "html2canvas": "*",
+    "lucasbarretto86.componentizer": "^1.0.2",
     "parcel": "^2.0.0-beta.2"
   }
 }

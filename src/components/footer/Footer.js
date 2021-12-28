@@ -1,14 +1,13 @@
-import Component from "../../libs/component"
+import Componentizer from "lucasbarretto86.componentizer"
 import "./Footer.scss"
-export default class Footer {
-    constructor(props) {
-        this.props = props;
 
-        return this.render()
+export default class Footer extends Componentizer {
+    constructor(props) {
+        super(props)
     }
 
     render() {
-        return Component.build("footer", "", { id: "footer", class: "footer" },
+        return this.build("footer", "", { id: "footer", class: "footer" },
             ["button", "generate PDF", { onclick: this.props.generate, class: "footer__button footer__button--pdf" }]
         )
     }
