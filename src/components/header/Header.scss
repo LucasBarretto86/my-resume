@@ -3,10 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 16px;
+    padding-bottom: 32px;
 
     h1 {
         margin-bottom: 8px;
+        font-size: 48px !important;
     }
 
     &__block--top {
@@ -28,7 +29,7 @@
 
     &__info {
         span {
-            font-size: 14px;
+            font-size: 18px;
         }
 
         span+span {

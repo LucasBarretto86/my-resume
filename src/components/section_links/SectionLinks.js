@@ -1,4 +1,9 @@
 import Componentizer from "lucasbarretto86.componentizer";
+
+import github_icon from "../../assets/images/icons/github.png"
+import linkedin_icon from "../../assets/images/icons/linkedin.png"
+import version_control_icon from "../../assets/images/icons/version-control.png"
+
 import "./SectionLinks.scss";
 export default class LinksList extends Componentizer {
     constructor(props) {

@@ -8,7 +8,7 @@
   "scripts": {
     "start": "parcel -p 5505 src/index.html --no-cache --open",
     "build": "rm -rf ./dist && parcel build src/index.html --no-cache --public-url ./dist/",
-    "deploy": "rm -rf ./build && parcel build src/index.html --no-cache --public-url ./build/ && cd build && cp index.html ../index.html",
+    "deploy": "rm index.html && yarn run build && cd ./dist && cp index.html ../index.html",
     "kills": "kill -9 $(lsof -t -i:5505)"
   },
   "devDependencies": {

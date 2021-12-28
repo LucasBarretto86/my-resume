@@ -7,16 +7,20 @@ import { PDFGenerator } from "./libs/pdf_generator";
 
 import "./index.scss";
 
+const state = {
+    profile: profile.pt
+}
+
 export default class App extends Componentizer {
     render() {
-        this.build("div", "", { id: "app", class: "app" },
+        return this.build("div", "", { id: "app", class: "app" },
             ["div", "", { id: "resume" },
-                new Header(profile.personal),
-                // new Main(profile),
+                new Header(state.profile.personal),
+                new Main(state.profile),
             ],
-            // new Footer({ generate: PDFGenerator.generate })
+            new Footer({ generate: PDFGenerator.generate })
         )
     }
 }
 
-new App().render()
+document.body.appendChild(new App())

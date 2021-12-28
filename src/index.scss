@@ -1,21 +1,28 @@
 #app {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+
     * {
-        text-justify: newspaper;
+        word-spacing: 4px;
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     h3 {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 24px;
+        line-height: 1.2;
         margin-bottom: 8px;
         width: 100%;
     }
 
     h4 {
-        font-size: 16px;
+        font-size: 22px;
         margin-bottom: 4px;
         width: 100%;
     }
@@ -24,19 +31,22 @@
         font-weight: 600;
     }
 
-    p, a {
-        font-size: 12px;
+    p,
+    a {
+        font-size: 18px;
         max-inline-size: 78ch;
     }
 
     #resume {
         display: flex;
         flex-direction: column;
-        width: 70.936vh; 
-        height:100vh;
         grid-column-gap: 32px;
 
-        padding: 48px;
+        height: 1754px;
+        width: 1240px;
+        min-height: 100%;
+        min-width: 100%;    
+        padding: 96px 80px;
         margin: 0 auto;
         background-color: var(--secondary-color);
     }
